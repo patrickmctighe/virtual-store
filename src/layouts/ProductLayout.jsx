@@ -1,5 +1,5 @@
 import { NavLink, Outlet, useLocation } from "react-router-dom";
-
+import { useState, useEffect } from "react";
 export default function ProductLayout() {
 
     
@@ -7,6 +7,23 @@ export default function ProductLayout() {
       
         const shouldShowProductList = !location.pathname.startsWith("/products/");
       
+        const [currentImage, setCurrentImage] = useState(0);
+        const images = [
+            "../src/assets/images/icons/gardenIcon.gif",
+          "../src/assets/images/icons/poison.gif",
+        ];
+      
+        const imageDisplayTimes = [7000, 750]; // Time (in milliseconds) for each image
+      
+        useEffect(() => {
+          const interval = setInterval(() => {
+            setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+          }, imageDisplayTimes[currentImage]);
+      
+          return () => {
+            clearInterval(interval);
+          };
+        }, [images.length, currentImage]);
 
   return (
     <div className="productArea">
@@ -58,7 +75,8 @@ export default function ProductLayout() {
           <NavLink className="prodLink" to="/products/garden">
             <img
               className="icon"
-              src="../src/assets/images/icons/gardenIcon.gif"
+              src={images[currentImage]}
+    
               alt="garden"
             />
             Garden Package

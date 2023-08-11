@@ -218,6 +218,54 @@ a {
 }
 
 /* Classic */
+.productTextAndTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+width:40%;
+font-family: 'Handjet', cursive;
+
+}
+
+.specMainTitle{
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 3px;
+  margin-top: 0px;
+}
+
+.specList{
+  /* display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-family: 'Handjet', cursive; */
+}
+.specTitle{
+  /* font-size: 1.7em;
+  font-weight: 200;
+  padding:none;
+  margin:none; */
+  margin-top: 0;
+font-size: 20px;
+font-weight: 600;
+  margin-bottom: 0px; 
+}
+.specExp{
+  /* font-size: 1.2em;
+  font-weight: 200;
+ height: .5em; */
+ margin-top: 0;
+ margin-bottom: 5px; 
+ font-size: 18px;
+}
+.specItem{
+ display:flex;
+ flex-direction: column;
+  padding: none;
+   margin-bottom: 20px;
+}
 #packages{
   display: flex;
   justify-content: center;
@@ -226,8 +274,8 @@ a {
  
 }
 .productImg{
-  width: 30em;
-  height: 20em;
+  width: 43em;
+  height: 33em;
   border-color: darkgray;
   border-style: ridge;
   
@@ -238,9 +286,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  gap: 6em;
+gap:2em;
+  
 }
+
 .productText{
 width: 60%;
 font-size: 1.25em;
@@ -248,9 +297,10 @@ line-height: 1.75em;
 }
 .productSpec{
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
+ 
+  font-family: 'Handjet', cursive;
 }
 
 .productTextAndButton{
@@ -259,7 +309,42 @@ line-height: 1.75em;
   align-items: center;
   gap:1em;
   flex-direction: column;
-  
+  font-family: 'Handjet', cursive;
+}
+.price{
+  font-size: 1.5em;
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 40%;
+}
+.priceAndAdd{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  border-color: darkgray;
+  border-style: ridge;
+  padding: 1em;
+  border-width: 0.25em;
+  height: 2em;
+  width: 19em;
+}
+.cartButton{
+  border-color: darkgray;
+  border-style: ridge;
+  font-family: "Silkscreen", cursive;
+  border-width: 0.25em;
+  width: 60%;
+}
+.inCartText{
+  border-color: darkgray;
+  font-size: 18px;
+  color: lightgray;
+  background-color: black;
+  padding: .25em;
+  margin:5px;
+  font-weight:500 ;
 }
 
 /* Cart Area */
@@ -272,10 +357,9 @@ line-height: 1.75em;
 
 }
 .items{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  
   gap: 1em;
 }
 .qtButt{
@@ -321,6 +405,54 @@ line-height: 1.75em;
 
 }
 .price{
+  padding-right: 1.4em;
   
-  margin: 0;
 }
+/*contact page */
+
+
+    .contact-container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+width:50%;
+      color:black;
+      border-radius: 10px;
+      font-family: 'Handjet', cursive;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .contact-section {
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .contact-title {
+      font-size: 1.5em;
+      margin-bottom: 5px;
+    }
+
+    .contact-details {
+      font-size: 1.2em;
+      text-align: center;
+    }
+
+    /*FAQ page */
+    .fAQContainer{
+      display: flex;
+      justify-content: center;
+   
+      flex-direction: column;
+      font-family: 'Handjet', cursive;
+      width: 60%;
+      margin: 0 ;
+    }

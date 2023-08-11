@@ -49,8 +49,8 @@ export default function Cart() {
             </div>
 
             <div className="qtButtAndPrice">
-              {" "}
-              <h4 className="price">{item.priceScrap} $crap</h4>
+              
+              <p className="price">&#9763;{item.priceScrap}</p>
               <div className="qtButt">
                 <button
                   className="increase"
