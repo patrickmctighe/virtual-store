@@ -1,0 +1,228 @@
+
+  
+  /* header area */
+  .headerLogo {
+    margin: 0 auto;
+  }
+  .navLogo {
+    height: 6em;
+    padding: 10px;
+  
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .header {
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .headerNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    gap: 3em;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  
+  a.active {
+    text-decoration: none;
+    color: black;
+    background-color: darkgray;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+  }
+
+
+  @media (max-width: 768px) {
+
+    .headerLogo {
+        margin: 0 auto;
+      }
+      .navLogo {
+        height: 6em;
+        padding: 10px;
+      
+        display: flex;
+        justify-content: flex-start;
+      }
+      
+      .header {
+        display: flex;
+      flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .headerNav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      padding: .25em;
+        width: 20%;
+        margin: 0 auto;
+        gap: 0.5em;
+        text-decoration: none;
+        font-size: 1.25em;
+        column-gap: 1em;
+        row-gap: 1em;
+        text-align: center;
+      }
+      
+      a.active {
+        text-decoration: none;
+        color: black;
+        background-color: darkgray;
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+      }
+  }
+
+  @media screen and (max-width: 480px){
+
+    .headerLogo {
+        margin: 0 auto;
+      }
+      .navLogo {
+        height: 6em;
+        padding: 10px;
+      
+        display: flex;
+        justify-content: flex-start;
+      }
+      
+      .header {
+        display: flex;
+      flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .headerNav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      padding: .25em;
+        width: 20%;
+        margin: 0 auto;
+        gap: 0.5em;
+        text-decoration: none;
+        font-size: 1.25em;
+        column-gap: 1em;
+        row-gap: 1em;
+        text-align: center;
+      }
+      
+      a.active {
+        text-decoration: none;
+        color: black;
+        background-color: darkgray;
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+      }
+  }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .headerLogo {
+        margin: 0 auto;
+      }
+      .navLogo {
+        height: 6em;
+        padding: 10px;
+      
+        display: flex;
+        justify-content: flex-start;
+      }
+      
+      .header {
+        display: flex;
+      flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .headerNav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      padding: .25em;
+        width: 20%;
+        margin: 0 auto;
+        gap: 0.5em;
+        text-decoration: none;
+        font-size: 1.25em;
+        column-gap: 1em;
+        row-gap: 1em;
+        text-align: center;
+      }
+      
+      a.active {
+        text-decoration: none;
+        color: black;
+        background-color: darkgray;
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+      }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .headerLogo {
+        margin: 0 auto;
+      }
+      .navLogo {
+        height: 6em;
+        padding: 10px;
+      
+        display: flex;
+        justify-content: flex-start;
+      }
+      
+      .header {
+        display: flex;
+     
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .headerNav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      padding: .25em;
+        width: 60%;
+        margin: 0 auto;
+        gap: 0.5em;
+        text-decoration: none;
+        font-size: 1.25em;
+        column-gap: 1em;
+        row-gap: 1em;
+        text-align: center;
+      }
+      
+      a.active {
+        text-decoration: none;
+        color: black;
+        background-color: darkgray;
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+      }
+
+}
+
+

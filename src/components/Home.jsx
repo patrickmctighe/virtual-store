@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 const Home = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    "src/assets/images/home/earth.gif",
+    "src/assets/images/home/earth1.gif",
     "src/assets/images/home/warning.png",
     "src/assets/images/home/badEarth.gif",
     "src/assets/images/home/loading.png",
@@ -24,8 +24,13 @@ const Home = () => {
 
   return (
     <div className="homeMain">
-      <img className="homeImg" src={images[currentImage]} alt="Carousel" />
-    </div>
+        <div className="bannerArea"><p className="homeBanner">Don't Let The Climate Change You Try</p>
+        <p className="homeBanner1">Climate Change-a-roo</p> </div>
+          <img className="homeImg" src={images[currentImage]} alt="Carousel" />
+    
+        <p className="gandhi">"Order The Change You Want To Be Subjected Too" - Robot Gandhi</p>
+      
+   </div>
   );
 };
 

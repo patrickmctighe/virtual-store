@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { items } from "../objects/itemsList";
 import { addToCart } from "../functions/addToCart";
-import { decreaseQt } from "../functions/decreaseQt";
-import { increaseQt } from "../functions/increaseQt";
+import { useCartItemsCount } from "../context/context";
 export default function Classic() {
   const [addedToCart, setAddedToCart] = useState(
     localStorage.getItem(`addedToCart_${items[1].name}`) === "true"
@@ -16,6 +15,9 @@ export default function Classic() {
     "../src/assets/images/weather-gifs/classicDay.gif",
     "../src/assets/images/weather-gifs/postWorld.gif",
   ];
+
+  const { updateCartItemsCount, cartItemsCount } = useCartItemsCount(); // Use the hook from the context
+
 
   const imageDisplayTimes = [3000, 2000, 500, 1000, 500]; // Time (in milliseconds) for each image
 
@@ -36,11 +38,12 @@ export default function Classic() {
       <div id="packages">
         <h1>Classic Package</h1>
         <div className="productImgandText">
-          <img
+            <div className="imgArea"> <img
             className="productImg"
             src={images[currentImage]}
             alt="Carousel"
-          />
+          /></div>
+         
           <div className="productSpec">
             <h4 className="specMainTitle">Specifications</h4>
             <div className="specItem">
@@ -128,9 +131,10 @@ export default function Classic() {
             {addedToCart ? (
                <p className="inCartText">Added to Your Cart</p>
             ) : (
-              <button
+                <button
                 className="cartButton"
-                onClick={() => addToCart(item, setAddedToCart)}
+                onClick={() => {addToCart(item, setAddedToCart); 
+                    updateCartItemsCount(cartItemsCount + 1);}}
               >
                 Add to Cart
               </button>

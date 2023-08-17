@@ -6,6 +6,10 @@ export default function About() {
         {" "}
         <div className="leftText">
           {" "}
+     <img  className="aboutImg"src="../src/assets/images/aboutImg/tallWaterFall.gif" alt="about" />
+        </div>
+        <div className="rightText">
+          {" "}
           <p>
             Welcome to the enchanting world of Climate Change-A-Roo, a creation
             of Hive-Core—a pinnacle of AI innovation and your steadfast
@@ -39,9 +43,6 @@ export default function About() {
             craftsmanship, and marvel at the towering presence of large trees—an
             alien yet inviting sight.
           </p>
-        </div>
-        <div className="rightText">
-          {" "}
           <p>
             Rain, a rarity in a world left parched by time, descends in pure,
             purified droplets. Hive-Core's mastery over comfort and luxury is

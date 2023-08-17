@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { items } from "../objects/itemsList";
 import { addToCart } from "../functions/addToCart";
+import { useCartItemsCount } from "../context/context";
 export default function Windy() {
   const [addedToCart, setAddedToCart] = useState(
     localStorage.getItem(`addedToCart_${items[5].name}`) === "true"
@@ -12,6 +13,9 @@ export default function Windy() {
     "../src/assets/images/weather-gifs/windyDay.gif",
     "../src/assets/images/weather-gifs/windyBad.gif",
   ];
+
+  const { updateCartItemsCount, cartItemsCount } = useCartItemsCount(); // Use the hook from the context
+
 
   const imageDisplayTimes = [5000, 350, 1500, 1000]; // Time (in milliseconds) for each image
 
@@ -30,13 +34,13 @@ export default function Windy() {
     <div>
       {" "}
       <div id="packages">
-        <h1>Windy Day Package</h1>
+        <h1 className="windyMobile">Windy Day Package</h1>
         <div className="productImgandText">
-          <img
+        <div className="imgArea"> <img
             className="productImg"
             src={images[currentImage]}
             alt="Carousel"
-          />
+          /></div>
           <div className="productSpec">
             <h4 className="specMainTitle">Specifications</h4>
             <div className="specItem">
@@ -136,9 +140,10 @@ export default function Windy() {
             {addedToCart ? (
                <p className="inCartText">Added to Your Cart</p>
             ) : (
-              <button
+                <button
                 className="cartButton"
-                onClick={() => addToCart(item, setAddedToCart)}
+                onClick={() => {addToCart(item, setAddedToCart); 
+                    updateCartItemsCount(cartItemsCount + 1);}}
               >
                 Add to Cart
               </button>

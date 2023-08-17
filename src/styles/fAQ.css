@@ -1,0 +1,137 @@
+/*FAQ page */
+.fAQContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-direction: column;
+    font-family: "Handjet", cursive;
+    width: 60%;
+    padding-bottom: 2em;
+  }
+  .fAQTitle {
+    text-align: center;
+  }
+  .fAQItem {
+  }
+  .fAQA {
+    margin: 0 0;
+    font-size: 20px;
+  }
+  
+  .fAQQ {
+    margin: 0 0;
+    font-size: 25px;
+  }
+
+
+  @media (max-width: 768px) {
+    .fAQContainer {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        flex-direction: column;
+        font-family: "Handjet", cursive;
+        width: 90%;
+        padding-bottom: 2em;
+      }
+      .fAQTitle {
+        text-align: center;
+        margin-bottom: 0px;
+      }
+      .fAQItem {
+      }
+      .fAQA {
+        margin: 0 0;
+        font-size: 18px;
+      }
+      
+      .fAQQ {
+        margin: 0 0;
+        font-size: 20px;
+      }
+
+  }
+
+  @media screen and (max-width: 480px){
+
+    .fAQContainer {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        flex-direction: column;
+        font-family: "Handjet", cursive;
+        width: 90%;
+        padding-bottom: 2em;
+      }
+      .fAQTitle {
+        text-align: center;
+        margin-bottom: 0px;
+      }
+      .fAQItem {
+      }
+      .fAQA {
+        margin: 0 0;
+        font-size: 18px;
+      }
+      
+      .fAQQ {
+        margin: 0 0;
+        font-size: 20px;
+      }
+  }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .fAQContainer {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        flex-direction: column;
+        font-family: "Handjet", cursive;
+        width: 90%;
+        padding-bottom: 2em;
+      }
+      .fAQTitle {
+        text-align: center;
+        margin-bottom: 0px;
+      }
+      .fAQItem {
+      }
+      .fAQA {
+        margin: 0 0;
+        font-size: 18px;
+      }
+      
+      .fAQQ {
+        margin: 0 0;
+        font-size: 20px;
+      }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .fAQContainer {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        flex-direction: column;
+        font-family: "Handjet", cursive;
+        width: 90%;
+        padding-bottom: 2em;
+      }
+      .fAQTitle {
+        text-align: center;
+        margin-bottom: 0px;
+      }
+      .fAQItem {
+      }
+      .fAQA {
+        margin: 0 0;
+        font-size: 18px;
+      }
+      
+      .fAQQ {
+        margin: 0 0;
+        font-size: 20px;
+      }
+}
+
+

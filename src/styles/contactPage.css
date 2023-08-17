@@ -1,0 +1,80 @@
+
+/*contact page */
+
+.contact-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    color: black;
+    border-radius: 10px;
+    font-family: "Handjet", cursive;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .contact-section {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .contact-title {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+  }
+  
+  .contact-details {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact-container {
+      width: 93%;
+      text-align: center;
+    }
+  }
+
+  
+  @media screen and (max-width: 480px){
+
+    .contact-container {
+        width: 93%;
+        text-align: center;
+      }
+  }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .contact-container {
+        width: 93%;
+        text-align: center;
+      } 
+  
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .contact-container {
+        width: 93%;
+        text-align: center;
+      }
+
+}
+
+
+@media screen and (min-width: 1025px) and (orientation: landscape){
+    .contact-container {
+        width: 93%;
+        text-align: center;
+      }
+
+}
+  

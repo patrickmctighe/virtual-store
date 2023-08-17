@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { items } from "../objects/itemsList";
 import { addToCart } from "../functions/addToCart";
+import { useCartItemsCount } from "../context/context";
 export default function Stormy() {
   const [addedToCart, setAddedToCart] = useState(
     localStorage.getItem(`addedToCart_${items[4].name}`) === "true"
@@ -12,6 +13,9 @@ export default function Stormy() {
     "../src/assets/images/weather-gifs/rain-garden.gif",
     "../src/assets/images/weather-gifs/postWorld2.gif",
   ];
+
+  const { updateCartItemsCount, cartItemsCount } = useCartItemsCount(); // Use the hook from the context
+
 
   const imageDisplayTimes = [5000, 300, 1500, 700]; // Time (in milliseconds) for each image
 
@@ -29,13 +33,13 @@ export default function Stormy() {
     <div>
       {" "}
       <div id="packages">
-        <h1>Stormy Day Package</h1>
+        <h1 className="stormyMobile">Stormy Day Package</h1>
         <div className="productImgandText">
-          <img
+        <div className="imgArea"> <img
             className="productImg"
             src={images[currentImage]}
             alt="Carousel"
-          />
+          /></div>
           <div className="productSpec">
             <h4 className="specMainTitle">Specifications</h4>
             <div className="specItem">
@@ -135,9 +139,10 @@ export default function Stormy() {
             {addedToCart ? (
             <p className="inCartText">Added to Your Cart</p>
             ) : (
-              <button
+                <button
                 className="cartButton"
-                onClick={() => addToCart(item, setAddedToCart)}
+                onClick={() => {addToCart(item, setAddedToCart); 
+                    updateCartItemsCount(cartItemsCount + 1);}}
               >
                 Add to Cart
               </button>

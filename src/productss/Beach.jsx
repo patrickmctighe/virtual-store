@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { items } from "../objects/itemsList";
 import { addToCart } from "../functions/addToCart";
+import { useCartItemsCount } from "../context/context";
+
 export default function Beach() {
   const [addedToCart, setAddedToCart] = useState(
     localStorage.getItem(`addedToCart_${items[0].name}`) === "true"
@@ -10,8 +12,9 @@ export default function Beach() {
     "../src/assets/images/weather-gifs/beach.gif",
     "../src/assets/images/weather-gifs/beachBad.gif",
   ];
+  const { updateCartItemsCount, cartItemsCount } = useCartItemsCount(); // Use the hook from the context
 
-  const imageDisplayTimes = [7000, 750]; // Time (in milliseconds) for each image
+  const imageDisplayTimes = [7000, 750]; 
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -29,13 +32,13 @@ export default function Beach() {
     <div>
       {" "}
       <div id="packages">
-        <h1>Beach Day Package</h1>
+        <h1 className="beachMobile">Beach Day Package</h1>
         <div className="productImgandText">
-          <img
+        <div className="imgArea"> <img
             className="productImg"
             src={images[currentImage]}
             alt="Carousel"
-          />
+          /></div>
           <div className="productSpec">
             <h4 className="specMainTitle">Specifications</h4>
             <div className="specItem">
@@ -136,7 +139,8 @@ export default function Beach() {
             ) : (
               <button
                 className="cartButton"
-                onClick={() => addToCart(item, setAddedToCart)}
+                onClick={() => {addToCart(item, setAddedToCart); 
+                    updateCartItemsCount(cartItemsCount + 1);}}
               >
                 Add to Cart
               </button>

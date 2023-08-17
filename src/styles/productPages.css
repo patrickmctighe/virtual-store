@@ -1,0 +1,690 @@
+
+/* Product Pages */
+
+.productTextAndTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    font-family: "Handjet", cursive;
+  }
+  
+  .specMainTitle {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 3px;
+    margin-top: 0px;
+  }
+  
+
+  .specTitle {
+   
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+  .specExp {
+  
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  .specItem {
+    display: flex;
+    flex-direction: column;
+    padding: none;
+    margin-bottom: 20px;
+  }
+  #packages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .productImg {
+    width: 37em;
+
+    height: 33em;
+    border-color: darkgray;
+    border-style: ridge;
+  
+    border-width: 0.25em;
+  }
+  
+  .productImgandText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+  
+  .productText {
+    width: 60%;
+    font-size: 1.25em;
+    line-height: 1.75em;
+  }
+  .productSpec {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  min-width: 50%;
+    font-family: "Handjet", cursive;
+  }
+  
+  .productTextAndButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
+    font-family: "Handjet", cursive;
+  }
+  .price {
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 45%;
+  }
+  .priceAndAdd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    border-color: darkgray;
+    border-style: ridge;
+    padding: 1em;
+    border-width: 0.25em;
+    height: 2em;
+    width: 21em;
+  }
+  .cartButton {
+    border-color: darkgray;
+    border-style: ridge;
+    font-family: "Silkscreen", cursive;
+    border-width: 0.25em;
+    width: 55%;
+  }
+  .inCartText {
+    border-color: darkgray;
+    font-size: 18px;
+    color: lightgray;
+    background-color: black;
+    padding: 0.25em;
+    margin: 5px;
+    font-weight: 500;
+    width: 55%;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+
+    .productTextAndTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        font-family: "Handjet", cursive;
+      }
+      
+      .specMainTitle {
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 3px;
+        margin-top: 0px;
+      }
+      .stormyMobile{
+        width: 70%;
+        text-align: center;
+      }
+    .windyMobile{
+        width: 60%;
+        text-align: center;
+      }
+      .beachMobile{
+        width: 67%;
+        text-align: center;
+      }
+      .specTitle {
+       
+        margin-top: 0;
+        font-size: 1em;
+        font-weight: 600;
+        margin-bottom: 0px;
+      }
+      .specExp {
+      
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: .95em;
+      }
+      .specItem {
+        display: flex;
+        flex-direction: column;
+        padding: none;
+        margin-bottom: 10px;
+      }
+      #packages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+      }
+      .productImg {
+      width: 90%;
+       
+        height:90%;
+        border-color: darkgray;
+        border-style: ridge;
+      
+        border-width: 0.25em;
+      }
+      .imgArea{
+        height: 15em;
+        width: 25em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .productImgandText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2em;
+      
+      }
+      
+      .productText {
+        width: 70%;
+        font-size: 1em;
+        line-height: 1.75em;
+      }
+      .productSpec {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    width: 70%;
+        font-family: "Handjet", cursive;
+    
+      }
+      
+      .productTextAndButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        flex-direction: column;
+        font-family: "Handjet", cursive;
+      }
+      .price {
+        font-size: 1.5em;
+        font-weight: 200;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 45%;
+      }
+      .priceAndAdd {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5em;
+        border-color: darkgray;
+        border-style: ridge;
+        padding: 1em;
+        border-width: 0.25em;
+        height: 2em;
+        width: 21em;
+      }
+      .cartButton {
+        border-color: darkgray;
+        border-style: ridge;
+        font-family: "Silkscreen", cursive;
+        border-width: 0.25em;
+        width: 55%;
+      }
+      .inCartText {
+        border-color: darkgray;
+        font-size: 18px;
+        color: lightgray;
+        background-color: black;
+        padding: 0.25em;
+        margin: 5px;
+        font-weight: 500;
+      }    
+
+  }
+  
+
+  @media screen and (max-width: 480px){
+
+ 
+    .productTextAndTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        font-family: "Handjet", cursive;
+      }
+      
+      .specMainTitle {
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 3px;
+        margin-top: 0px;
+      }
+      .stormyMobile{
+        width: 70%;
+        text-align: center;
+      }
+    .windyMobile{
+        width: 60%;
+        text-align: center;
+      }
+      .beachMobile{
+        width: 67%;
+        text-align: center;
+      }
+      .specTitle {
+       
+        margin-top: 0;
+        font-size: 1em;
+        font-weight: 600;
+        margin-bottom: 0px;
+      }
+      .specExp {
+      
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: .95em;
+      }
+      .specItem {
+        display: flex;
+        flex-direction: column;
+        padding: none;
+        margin-bottom: 10px;
+      }
+      #packages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+      }
+      .productImg {
+      width: 90%;
+       
+        height:90%;
+        border-color: darkgray;
+        border-style: ridge;
+      
+        border-width: 0.25em;
+      }
+      .imgArea{
+        height: 15em;
+        width: 25em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .productImgandText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2em;
+      
+      }
+      
+      .productText {
+        width: 70%;
+        font-size: 1em;
+        line-height: 1.75em;
+      }
+      .productSpec {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    width: 70%;
+        font-family: "Handjet", cursive;
+    
+      }
+      
+      .productTextAndButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        flex-direction: column;
+        font-family: "Handjet", cursive;
+      }
+      .price {
+        font-size: 1.5em;
+        font-weight: 200;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 45%;
+      }
+      .priceAndAdd {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5em;
+        border-color: darkgray;
+        border-style: ridge;
+        padding: 1em;
+        border-width: 0.25em;
+        height: 2em;
+        width: 21em;
+      }
+      .cartButton {
+        border-color: darkgray;
+        border-style: ridge;
+        font-family: "Silkscreen", cursive;
+        border-width: 0.25em;
+        width: 55%;
+      }
+      .inCartText {
+        border-color: darkgray;
+        font-size: 18px;
+        color: lightgray;
+        background-color: black;
+        padding: 0.25em;
+        margin: 5px;
+        font-weight: 500;
+      } 
+  }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    
+    .productTextAndTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        font-family: "Handjet", cursive;
+      }
+      
+      .specMainTitle {
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 3px;
+        margin-top: 0px;
+      }
+      .stormyMobile{
+        width: 70%;
+        text-align: center;
+      }
+    .windyMobile{
+        width: 60%;
+        text-align: center;
+      }
+      .beachMobile{
+        width: 67%;
+        text-align: center;
+      }
+      .specTitle {
+       
+        margin-top: 0;
+        font-size: 1em;
+        font-weight: 600;
+        margin-bottom: 0px;
+      }
+      .specExp {
+      
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: .95em;
+      }
+      .specItem {
+        display: flex;
+        flex-direction: column;
+        padding: none;
+        margin-bottom: 10px;
+      }
+      #packages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+      }
+      .productImg {
+      width: 90%;
+       
+        height:90%;
+        border-color: darkgray;
+        border-style: ridge;
+      
+        border-width: 0.25em;
+      }
+      .imgArea{
+        height: 15em;
+        width: 25em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .productImgandText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2em;
+      
+      }
+      
+      .productText {
+        width: 70%;
+        font-size: 1em;
+        line-height: 1.75em;
+      }
+      .productSpec {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    width: 70%;
+        font-family: "Handjet", cursive;
+    
+      }
+      
+      .productTextAndButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        flex-direction: column;
+        font-family: "Handjet", cursive;
+      }
+      .price {
+        font-size: 1.5em;
+        font-weight: 200;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 45%;
+      }
+      .priceAndAdd {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5em;
+        border-color: darkgray;
+        border-style: ridge;
+        padding: 1em;
+        border-width: 0.25em;
+        height: 2em;
+        width: 21em;
+      }
+      .cartButton {
+        border-color: darkgray;
+        border-style: ridge;
+        font-family: "Silkscreen", cursive;
+        border-width: 0.25em;
+        width: 55%;
+      }
+      .inCartText {
+        border-color: darkgray;
+        font-size: 18px;
+        color: lightgray;
+        background-color: black;
+        padding: 0.25em;
+        margin: 5px;
+        font-weight: 500;
+      } 
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+   
+    .productTextAndTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        font-family: "Handjet", cursive;
+      }
+      
+      .specMainTitle {
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 3px;
+        margin-top: 0px;
+      }
+      .stormyMobile{
+        width: 70%;
+        text-align: center;
+      }
+    .windyMobile{
+        width: 60%;
+        text-align: center;
+      }
+      .beachMobile{
+        width: 67%;
+        text-align: center;
+      }
+      .specTitle {
+       
+        margin-top: 0;
+        font-size: 1em;
+        font-weight: 600;
+        margin-bottom: 0px;
+      }
+      .specExp {
+      
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: .95em;
+      }
+      .specItem {
+        display: flex;
+        flex-direction: column;
+        padding: none;
+        margin-bottom: 10px;
+      }
+      #packages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+      }
+      .productImg {
+      width: 90%;
+       
+        height:90%;
+        border-color: darkgray;
+        border-style: ridge;
+      
+        border-width: 0.25em;
+      }
+      .imgArea{
+        height: 15em;
+        width: 25em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .productImgandText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2em;
+      
+      }
+      
+      .productText {
+        width: 70%;
+        font-size: 1em;
+        line-height: 1.75em;
+      }
+      .productSpec {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    width: 70%;
+        font-family: "Handjet", cursive;
+    
+      }
+      
+      .productTextAndButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        flex-direction: column;
+        font-family: "Handjet", cursive;
+      }
+      .price {
+        font-size: 1.5em;
+        font-weight: 200;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 45%;
+      }
+      .priceAndAdd {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5em;
+        border-color: darkgray;
+        border-style: ridge;
+        padding: 1em;
+        border-width: 0.25em;
+        height: 2em;
+        width: 21em;
+      }
+      .cartButton {
+        border-color: darkgray;
+        border-style: ridge;
+        font-family: "Silkscreen", cursive;
+        border-width: 0.25em;
+        width: 55%;
+      }
+      .inCartText {
+        border-color: darkgray;
+        font-size: 18px;
+        color: lightgray;
+        background-color: black;
+        padding: 0.25em;
+        margin: 5px;
+        font-weight: 500;
+      } 
+
+}
+
+
+
+
+  
