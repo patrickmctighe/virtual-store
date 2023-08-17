@@ -14,7 +14,7 @@ export default function RootLayout() {
         <div className="headerLogo">
           <img
             className="navLogo"
-            src="../src/assets/images/logo/rooLogo.png"
+            src="../images/logo/rooLogo.png"
             alt="logo"
           />
         </div>

@@ -6,7 +6,7 @@ export default function About() {
         {" "}
         <div className="leftText">
           {" "}
-     <img  className="aboutImg"src="../src/assets/images/aboutImg/tallWaterFall.gif" alt="about" />
+     <img  className="aboutImg"src="../images/aboutImg/tallWaterFall.gif" alt="about" />
         </div>
         <div className="rightText">
           {" "}

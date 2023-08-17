@@ -8,10 +8,10 @@ export default function Garden() {
   );
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    "../src/assets/images/weather-gifs/garden.gif",
-    "../src/assets/images/weather-gifs/garden1.gif",
-    "../src/assets/images/weather-gifs/garden.gif",
-    "../src/assets/images/weather-gifs/garden1.gif",
+    "../images/weather-gifs/garden.gif",
+    "../images/weather-gifs/garden1.gif",
+    "../images/weather-gifs/garden.gif",
+    "../images/weather-gifs/garden1.gif",
   ];
 
   const { updateCartItemsCount, cartItemsCount } = useCartItemsCount(); // Use the hook from the context

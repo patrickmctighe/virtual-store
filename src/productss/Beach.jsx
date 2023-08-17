@@ -9,8 +9,8 @@ export default function Beach() {
   );
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    "../src/assets/images/weather-gifs/beach.gif",
-    "../src/assets/images/weather-gifs/beachBad.gif",
+    "../images/weather-gifs/beach.gif",
+    "../images/weather-gifs/beachBad.gif",
   ];
   const { updateCartItemsCount, cartItemsCount } = useCartItemsCount(); // Use the hook from the context
 

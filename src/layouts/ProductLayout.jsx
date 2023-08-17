@@ -9,8 +9,8 @@ export default function ProductLayout() {
       
         const [currentImage, setCurrentImage] = useState(0);
         const images = [
-            "../src/assets/images/icons/gardenIcon.gif",
-          "../src/assets/images/icons/poison.gif",
+            "../images/icons/gardenIcon.gif",
+          "../images/icons/poison.gif",
         ];
       
         const imageDisplayTimes = [7000, 750]; // Time (in milliseconds) for each image
@@ -35,7 +35,7 @@ export default function ProductLayout() {
           <NavLink className="prodLink" to="/products/classic">
             <img
               className="icon"
-              src="../src/assets/images/icons/sunIcon.gif"
+              src="../images/icons/sunIcon.gif"
               alt="sunny"
             />
             Classic Package
@@ -45,7 +45,7 @@ export default function ProductLayout() {
           <NavLink className="prodLink" to="/products/snowy">
             <img
               className="icon"
-              src="../src/assets/images/icons/cactus.gif"
+              src="../images/icons/cactus.gif"
               alt="cactus"
             />
             Wild West Package
@@ -55,7 +55,7 @@ export default function ProductLayout() {
           <NavLink className="prodLink" to="/products/stormy">
             <img
               className="icon"
-              src="../src/assets/images/icons/stormyIcon.gif"
+              src="../images/icons/stormyIcon.gif"
               alt="storm"
             />
             Stormy package
@@ -65,7 +65,7 @@ export default function ProductLayout() {
           <NavLink className="prodLink" to="/products/windy">
             <img
               className="icon"
-              src="../src/assets/images/icons/windy1.gif"
+              src="../images/icons/windy1.gif"
               alt="windy"
             />
             Windy Package
@@ -86,7 +86,7 @@ export default function ProductLayout() {
           <NavLink className="prodLink" to="/products/beach">
             <img
               className="icon"
-              src="../src/assets/images/icons/beachball.gif"
+              src="../images/icons/beachball.gif"
               alt="beachball"
             />
             Beach Day Package

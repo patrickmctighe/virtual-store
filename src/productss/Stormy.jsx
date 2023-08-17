@@ -8,10 +8,10 @@ export default function Stormy() {
   );
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    "../src/assets/images/weather-gifs/rain-garden.gif",
-    "../src/assets/images/weather-gifs/stormyBad.gif",
-    "../src/assets/images/weather-gifs/rain-garden.gif",
-    "../src/assets/images/weather-gifs/postWorld2.gif",
+    "../images/weather-gifs/rain-garden.gif",
+    "../images/weather-gifs/stormyBad.gif",
+    "../images/weather-gifs/rain-garden.gif",
+    "../images/weather-gifs/postWorld2.gif",
   ];
 
   const { updateCartItemsCount, cartItemsCount } = useCartItemsCount(); // Use the hook from the context

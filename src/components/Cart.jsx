@@ -49,7 +49,7 @@ export default function Cart() {
     updateCartItemsCount(cart.length); // Update cart items count
   }, [cart, cartItemsCount]);
 
-
+console.log(cart)
 
   const handleConfirmPurchase = () => {
     setShowPopup(true); 

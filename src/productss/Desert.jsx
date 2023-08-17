@@ -9,10 +9,10 @@ export default function Snowy() {
   );
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    "../src/assets/images/weather-gifs/desertParadise.gif",
-    "../src/assets/images/weather-gifs/desert_trash.gif",
-    "../src/assets/images/weather-gifs/desertParadise.gif",
-    "../src/assets/images/weather-gifs/desert_trash.gif",
+    "../images/weather-gifs/desertParadise.gif",
+    "../images/weather-gifs/desert_trash.gif",
+    "../images/weather-gifs/desertParadise.gif",
+    "../images/weather-gifs/desert_trash.gif",
   ];
 
   const { updateCartItemsCount, cartItemsCount } = useCartItemsCount(); // Use the hook from the context

@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 const Home = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    "src/assets/images/home/earth1.gif",
-    "src/assets/images/home/warning.png",
-    "src/assets/images/home/badEarth.gif",
-    "src/assets/images/home/loading.png",
-    "src/assets/images/home/success.jpg",
+    "../images/home/earth1.gif",
+    "../images/home/warning.png",
+    "../images/home/badEarth.gif",
+    "../images/home/loading.png",
+    "../images/home/success.jpg",
   ];
 
   const imageDisplayTimes = [13000, 200, 2000, 700, 300];

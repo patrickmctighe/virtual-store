@@ -9,11 +9,11 @@ export default function Classic() {
 
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    "../src/assets/images/weather-gifs/classicDay.gif",
-    "../src/assets/images/weather-gifs/classicDay.gif",
-    "../src/assets/images/weather-gifs/postWorld.gif",
-    "../src/assets/images/weather-gifs/classicDay.gif",
-    "../src/assets/images/weather-gifs/postWorld.gif",
+    "../images/weather-gifs/classicDay.gif",
+    "../images/weather-gifs/classicDay.gif",
+    "../images/weather-gifs/postWorld.gif",
+    "../images/weather-gifs/classicDay.gif",
+    "../images/weather-gifs/postWorld.gif",
   ];
 
   const { updateCartItemsCount, cartItemsCount } = useCartItemsCount(); // Use the hook from the context

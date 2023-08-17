@@ -8,10 +8,10 @@ export default function Windy() {
   );
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    "../src/assets/images/weather-gifs/windyDay.gif",
-    "../src/assets/images/weather-gifs/windyBad.gif",
-    "../src/assets/images/weather-gifs/windyDay.gif",
-    "../src/assets/images/weather-gifs/windyBad.gif",
+    "../images/weather-gifs/windyDay.gif",
+    "../images/weather-gifs/windyBad.gif",
+    "../images/weather-gifs/windyDay.gif",
+    "../images/weather-gifs/windyBad.gif",
   ];
 
   const { updateCartItemsCount, cartItemsCount } = useCartItemsCount(); // Use the hook from the context
