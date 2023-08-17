@@ -84,7 +84,34 @@
     align-items: center;
   }
 
+  .remove{
+    border-color: darkgray;
+    border-style: ridge;
+    font-family: "Silkscreen", cursive;
+    border-width: 0.25em;
+   
 
+  }
+  .increase , .decrease{
+    border-color: darkgray;
+    border-style: ridge;
+    font-family: "Silkscreen", cursive;
+    border-width: 0.25em;
+    text-align: center;
+  }
+  .close{
+    border-color: darkgray;
+    border-style: ridge;
+    font-family: "Silkscreen", cursive;
+    border-width: 0.25em;
+  }
+
+.tracking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:.5em
+}
 
   @media (max-width: 768px) {
 
